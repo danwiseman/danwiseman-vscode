@@ -1,0 +1,82 @@
+{
+    "name": "danwiseman-vscode",
+    "version": "0.0.1",
+    "author": "danwiseman",
+    "summary": "Puppet module installs and configures vscode on linux and windows",
+    "license": "GPL-2.0+",
+    "source": "https://github.com/danwiseman/danwiseman-vscode",
+    "project_page": "https://github.com/danwiseman/danwiseman-vscode",
+    "dependencies": [
+  
+    ],
+    "operatingsystem_support": [
+      {
+        "operatingsystem": "RedHat",
+        "operatingsystemrelease": [
+          "6",
+          "7",
+          "8"
+        ]
+      },
+      {
+        "operatingsystem": "CentOS",
+        "operatingsystemrelease": [
+          "6",
+          "7",
+          "8"
+        ]
+      },
+      {
+        "operatingsystem": "OracleLinux",
+        "operatingsystemrelease": [
+          "6",
+          "7"
+        ]
+      },
+      {
+        "operatingsystem": "Scientific",
+        "operatingsystemrelease": [
+          "6",
+          "7"
+        ]
+      },
+      {
+        "operatingsystem": "SLES",
+        "operatingsystemrelease": [
+          "12",
+          "15"
+        ]
+      },
+      {
+        "operatingsystem": "Debian",
+        "operatingsystemrelease": [
+          "8",
+          "9",
+          "10"
+        ]
+      },
+      {
+        "operatingsystem": "Ubuntu",
+        "operatingsystemrelease": [
+          "14.04",
+          "16.04",
+          "18.04",
+          "20.04"
+        ]
+      },
+      {
+          "operatingsystem": "Windows",
+          "operatingsystemrelease": [
+              "10",
+              "11"
+          ]
+      }
+    ],
+    "requirements": [
+      {
+        "name": "puppet",
+        "version_requirement": ">= 6.0.0 < 8.0.0"
+      }
+    ]
+  }
+  
