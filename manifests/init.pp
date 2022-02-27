@@ -1,14 +1,16 @@
 
-class vscode {
-  $vscode_provider = lookup('vscode::provider')
-  $vscode_name = lookup('vscode::name')
+class vscode (
+  String  $provider     = 'chocolatey',
+  String  $package_name = 'vscode'
+) {
+  
+  if ($provider == 'apt') {
+    include vscode::apt
+  }
 
-  package { $vscode_name:
+  package { $package_name:
     ensure   => present,
-    provider => $vscode_provider,
+    provider => $provider,
   }
   
-  include vscode::workspaces
-  include vscode::extensions
-
 }

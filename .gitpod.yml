@@ -1,5 +1,0 @@
-image:
-  file: Dockerfile.gitpod
-
-tasks:
-  - init: bundle install
