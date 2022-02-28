@@ -1,7 +1,7 @@
 
 class vscode (
-  String  $provider     = 'chocolatey',
-  String  $package_name = 'vscode'
+  String $provider     = 'chocolatey',
+  String $package_name = 'vscode'
 ) {
   
   if ($provider == 'apt') {

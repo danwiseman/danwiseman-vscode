@@ -1,0 +1,12 @@
+{
+	"folders": [
+		<% @folder_paths.each_with_index do | folder, index | %>
+		{
+            "path": "<%= folder %>"
+        }<% if (index != folder_paths.size - 1) %>,<% end %>
+		<% end %>
+	],
+    "extensions": {
+        "recommendations": <%= @recommended_extensions_list %>
+    }
+}
